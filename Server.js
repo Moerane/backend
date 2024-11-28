@@ -5,10 +5,10 @@ const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const app = express();
-const port = process.env.PORT || 5432;
+const port = process.env.PORT || 5000;
 
 // Enable CORS for all requests
 app.use(cors());
